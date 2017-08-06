@@ -1,0 +1,29 @@
+<p>Föråd</p>
+
+<a class="button" ng-click="showEditForm()">Show edit formulär</a>
+
+
+<form ng-submit="editFormSubmit()" ng-show="visaForm">
+      <h3>Edit Contact</h3>
+      <!-- Add Form -->
+      <div class="row">
+        <div class="large-6 columns">
+          <label>Rubrik:{{id}}
+            <input type="text" ng-model="prov.rubrik" placeholder="$id" required />
+          </label>
+        </div>
+        <div class="large-6 columns">
+          <label>Innehåll :
+            <textarea type="text" ng-model="prov.body" placeholder="Body" required ></textarea>
+          </label>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="large-12 columns">
+            <input type="submit" value="Update Contact" class="button" ng-click="hide()" />
+            <a class="button" ng-click="hide()" ng-show="editFormShow">Hide update</a>
+        </div>
+     </div>
+
+   </form>

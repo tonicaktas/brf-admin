@@ -1,0 +1,23 @@
+<p>Gästlägenhet</p>
+
+
+<div ng-show="x.gast" ng-repeat="x in prov">
+<p>Här är {{x.gast[0].datum}} och den är bokad av {{x.gast[0].namn}}</p>
+</div>
+
+
+<a class="button" ng-click="showEditForm()">Show edit formulär</a>
+
+
+
+<table ng-show="visaForm">
+     <tbody ng-repeat="(key,x) in prov" ng-show="x.gast">
+       <tr >
+
+         <td>{{x.gast[0].datum}}</td>
+         <td>{{x.gast[0].namn}}</td>
+         <td>
+           <a class="button tiny alert" ng-click="removeContact(key)">Delete</a></td>
+       </tr>
+     </tbody>
+   </table>

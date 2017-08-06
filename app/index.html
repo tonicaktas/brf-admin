@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="b-admin" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+  <link rel="stylesheet" href="app.css">
+
+
+
+  <!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+
+
+</head>
+<body>
+  <div class="row">
+    <div class="columns">
+      <ul class="menu align-center">
+        <li><a href="#!/gym">Gym</a></li>
+        <li><a href="#!/lokal">Lokal</a></li>
+        <li><a href="#!/forad">Föråd</a></li>
+        <li><a href="#!/lagenhet">Gästlägenhet</a></li>
+        <li><a href="#!/aktuellt">Aktuellt</a></li>
+        <li><a href="#!/infoblad">Infoblad</a></li>
+        <li><a href="#!/kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="home ">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>Admin coltrol panel </h2>
+
+        <p>Välj i menyn vilken del av appen du vill ändra/uppdatera</p>
+        <hr>
+      </div>
+      <a class="button tiny" href="#!/">Hem</a>
+    </div>
+
+
+  </div>
+
+
+  <div ng-view></div>
+
+
+
+
+
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/foundation/js/foundation.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+
+
+
+
+  <script src="app.js"></script>
+  <script src="gym/gym.js"></script>
+  <script src="lokal/lokal.js"></script>
+  <script src="forad/forad.js"></script>
+  <script src="lagenhet/lagenhet.js"></script>
+  <script src="aktuellt/aktuellt.js"></script>
+  <script src="infoblad/infoblad.js"></script>
+  <script src="kontakt/kontakt.js"></script>
+  <script src="home/home.js"></script>
+
+  <script src="services/services.js"></script>
+
+
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

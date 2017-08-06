@@ -1,0 +1,14 @@
+/* app css stylesheet */
+
+
+
+
+.menu > li {
+  display: inline;
+}
+
+
+
+.home {
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+
+<div ng-show="x.lokal" ng-repeat="x in prov">
+<p>Här är {{x.lokal[0].datum}} och den är bokad av {{x.lokal[0].namn}}</p>
+</div>
+
+
+<a class="button" ng-click="showEditForm()">Show edit formulär</a>
+
+
+
+<table ng-show="visaForm">
+     <tbody ng-repeat="(key,x) in prov" ng-show="x.lokal">
+       <tr >
+
+         <td>{{x.lokal[0].datum}}</td>
+         <td>{{x.lokal[0].namn}}</td>
+         <td>
+           <a class="button tiny alert" ng-click="removeContact(key)">Delete</a></td>
+       </tr>
+     </tbody>
+   </table>
+
+
+
+  
